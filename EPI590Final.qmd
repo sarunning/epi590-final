@@ -40,5 +40,5 @@ tbl_summary(
 
 #making a ratings scatterplot:
 
-ggplot(data = game_films, aes(x = metacritic, y = rotten_tomatoes)) + geom_point()
+ggplot(data = game_films, aes(x = metacritic, y = rotten_tomatoes)) + geom_point() + labs(x= "Metacritic Score", y = "Rotten Tomatoes Score",                                          title = "Video Game Movie Ratings")
 ```
