@@ -1,0 +1,29 @@
+---
+title: "EPI590 Final Project"
+format: html
+editor: visual
+---
+
+Loading in packages and data:
+
+```{r}
+install.packages("gtsummary")
+install.packages("tidytuesdayR")
+install.packages("ggplot2")
+library("gtsummary")
+library("tidytuesdayR")
+library("ggplot2")
+
+tuesdata <- tidytuesdayR::tt_load('2026-06-09')
+game_films <- tuesdata$game_films
+rm(tuesdata)
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
