@@ -34,3 +34,11 @@ tbl_summary(
     rotten_tomatoes, metacritic, worldwide_box_office))
 
 ```
+
+```{r}
+#| echo: false
+
+#making a ratings scatterplot:
+
+ggplot(data = game_films, aes(x = metacritic, y = rotten_tomatoes)) + geom_point()
+```
